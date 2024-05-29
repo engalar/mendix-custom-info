@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link ref="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.12.2/dijit/themes/claro/claro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/engalar/MendixTheme@14210f8dd6e14bc596c5a24dbe3ea1006817f5fe/theme.compiled.css"
+    />
+    <title>React Spring Sandbox</title>
+  </head>
+
+  <body class="claro profile-desktop">
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div id="root">
+      <div class="mx-tabcontainer">
+        <ul class="nav nav-tabs mx-tabcontainer-tabs" role="tablist">
+          <li class="active" role="presentation">
+            <a href="#" class="mx-name-tabPage1" role="tab" aria-selected="true" data-roving-tabindex="" tabindex="0"
+              >Page 1</a
+            >
+          </li>
+          <li class="" role="presentation">
+            <a href="#" class="" role="tab" aria-selected="false" data-roving-tabindex="" tabindex="-1">Page 2</a>
+          </li>
+        </ul>
+        <div class="tab-content mx-tabcontainer-content" data-focusindex="0">
+          <div class="tab-pane mx-tabcontainer-pane active" role="tabpanel">
+            Page 1 content
+            <div class="btn" onclick="mx.ui.showMessage('info','content', false)">send msg</div>
+          </div>
+          <div class="tab-pane mx-tabcontainer-pane" role="tabpanel">Page 2 content</div>
+        </div>
+      </div>
+      <div id="cc"></div>
+    </div>
+    <script>
+      dojoConfig = {
+        isDebug: false,
+        useCustomLogger: true,
+        async: true,
+        baseUrl:
+          'https://cdn.jsdelivr.net/gh/engalar/MendixTheme@14210f8dd6e14bc596c5a24dbe3ea1006817f5fe/mxclientsystem/dojo/',
+        cacheBust: '638391203653479176',
+        rtlRedirect: 'index-rtl.html',
+        // packages: [{
+        //   name: "antd4mx",
+        //   location: "https://cdn.jsdelivr.net/gh/engalar/antd4mx@6c64302ac31997c84f9c1c5f1c2415e3c1667876/amd"
+        // }]
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/engalar/MendixTheme@14210f8dd6e14bc596c5a24dbe3ea1006817f5fe/mxclientsystem\mxui\mxui.js"></script>
+  </body>
+</html>
